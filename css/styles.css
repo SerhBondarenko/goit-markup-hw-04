@@ -118,6 +118,7 @@ p {
 
 /*Секция-герой*/
 .hero-section {
+  background-image: url(../images/img-hero.jpg);
   padding: 200px 0 200px 0;
   background-color: #2f303a;
 }
