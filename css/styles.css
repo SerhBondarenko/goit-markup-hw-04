@@ -120,10 +120,11 @@ p {
 .contacts-icon {
   text-align: center;
   justify-content: center;
-  margin-right: 10px;
+
   fill: var(--primary-text-color);
 }
-.envelope {
+.icon {
+  margin-right: 10px;
   width: 16px;
   height: 12px;
 }
@@ -132,9 +133,9 @@ p {
   height: 16px;
 }
 
-.envelope:hover,
+.contacts-icon:hover,
 .phone:hover,
-.envelope:focus,
+.contacts-icon:focus,
 .phone:focus {
   fill: var(--accent-color);
 }
@@ -284,7 +285,7 @@ values-item:nth-child(4)::before {
 
 .section-team {
   /* background-color: #f5f4fa;*/
-  background-color: var(--white-color);
+  background-color: #f5f4fa;
 }
 
 .team {
@@ -312,6 +313,7 @@ values-item:nth-child(4)::before {
 
 .ouer-team {
   display: flex;
+  background-color: var(--white-color);
 }
 .ouer-team .team-list + .team-list {
   margin-left: 30px;
@@ -327,7 +329,7 @@ values-item:nth-child(4)::before {
   height: 44px;
   text-align: center;
   justify-content: center;
-  margin: 16px 32px 30px 32px;
+  margin: 16px 32px 0px 32px;
 }
 
 .links-list {
@@ -337,6 +339,7 @@ values-item:nth-child(4)::before {
 }
 
 .link-item {
+  fill: #afb1b8;
   /*fill: #AFB1B8;*/
   display: flex;
   width: 44px;
@@ -350,13 +353,17 @@ values-item:nth-child(4)::before {
   margin-left: 10px;
 }
 .network {
-  fill: #afb1b8;
+  color: currentColor;
+  /*fill: #afb1b8;*/
 }
-.network:hover {
+.network:hover,
+.network:focus {
+  background-color: var(--accent-color);
   fill: var(--white-color);
 }
 .link-item:hover,
 .link-item:focus {
+  fill: var(--white-color);
   background-color: var(--accent-color);
 }
 /*Постоянные клиенты*/
@@ -385,6 +392,7 @@ values-item:nth-child(4)::before {
 .client-item:hover,
 .client-item:focus {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .client-list li + li {
